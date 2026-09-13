@@ -1,6 +1,6 @@
 # Surfing YAML Frontmatter
 
-This is the tree for [Surfing YAML Frontmatter](https://saintx.dev/posts/frontmatter-scan/) at tag `surf/0002-frontmatter-scan`.
+This is the tree for [Surfing YAML Frontmatter](https://saintx.dev/posts/surf-yaml-frontmatter/) at tag `surf/0002-surf-yaml-frontmatter`.
 
 ## Fetch
 
@@ -10,7 +10,7 @@ cd lessons
 git switch surf
 ./fetch
 uv tool install surf-cli==0.8.0
-git checkout surf/0002-frontmatter-scan
+git checkout surf/0002-surf-yaml-frontmatter
 ```
 
 `./fetch` runs the fetch scripts on the branch tip. Lesson state is the tag. Fetch once per machine; `corpus/` is gitignored and stays in place when you check out a tag.
@@ -29,4 +29,4 @@ Since `surf/0001-traverse-context` this tag adds `tag-pstack-skills.py` and this
 
 ## Experimenting
 
-`git switch -c mine surf/0002-frontmatter-scan` gives you a branch of your own at this post's state.
+`git switch -c mine surf/0002-surf-yaml-frontmatter` gives you a branch of your own at this post's state.
