@@ -28,10 +28,6 @@ surf corpus/pstack/skills/principle-guard-the-context-window/SKILL.md "Guard the
 
 Since `surf/0001-traverse-context` this tag adds `tag-pstack-skills.py` and this README. `fetch`, `fetch-pstack.sh`, `.gitignore`, and `LICENSE` are the same. The pin is still `889ec4b68fa5aab0e867dad71ec3fdf386ae48f3`.
 
-Next: `surf/0003-what-surf-sees`.
-
 ## Experimenting
 
 `git switch -c mine surf/0002-frontmatter-scan` gives you a branch of your own at this post's state.
-
-What a later post added is the three-dot diff between consecutive tags, for example `git diff surf/0002-frontmatter-scan...surf/0003-what-surf-sees`, or https://github.com/saintx/lessons/compare/surf/0002-frontmatter-scan...surf/0003-what-surf-sees.
