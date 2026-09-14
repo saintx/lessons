@@ -1,6 +1,6 @@
-# Surfing YAML Frontmatter
+# Markdown Edge Cases in surf: Structure, Code Blocks, and Backticks
 
-This is the tree for [Surfing YAML Frontmatter](https://saintx.dev/posts/surf-yaml-frontmatter/) at tag `surf/0002-surf-yaml-frontmatter`.
+This is the tree for [Markdown Edge Cases in surf: Structure, Code Blocks, and Backticks](https://saintx.dev/posts/markdown-edge-cases-in-surf/) at tag `surf/0003-markdown-edge-cases-in-surf`.
 
 ## Fetch
 
@@ -10,23 +10,22 @@ cd lessons
 git switch surf
 ./fetch
 uv tool install surf-cli==0.8.0
-git checkout surf/0002-surf-yaml-frontmatter
+git checkout surf/0003-markdown-edge-cases-in-surf
 ```
 
 `./fetch` runs the fetch scripts on the branch tip. Lesson state is the tag. Fetch once per machine; `corpus/` is gitignored and stays in place when you check out a tag.
 
-pstack is Lauren Tan's plugin in [cursor/plugins](https://github.com/cursor/plugins/tree/main/pstack), pinned at `889ec4b68fa5aab0e867dad71ec3fdf386ae48f3`, and lands at `corpus/pstack/`.
+pstack is Lauren Tan's plugin in [cursor/plugins](https://github.com/cursor/plugins/tree/main/pstack), pinned at `889ec4b68fa5aab0e867dad71ec3fdf386ae48f3`, and lands at `corpus/pstack/`. This post does not edit that tree.
 
 ```bash
-surf -f corpus/pstack/skills/principle-laziness-protocol/SKILL.md
-surf -f corpus/pstack/skills/principle-*/SKILL.md
-surf corpus/pstack/skills/principle-guard-the-context-window/SKILL.md "Guard the Context Window"
+surf corpus/pstack/skills/interrogate/references/reviewer-prompt.md "Output"
+surf corpus/pstack/skills/interrogate/references/reviewer-prompt.md --list
+surf corpus/pstack/README.md --list
+surf corpus/pstack/README.md 'pstack#usage#just use [`/poteto-mode`](./skills/poteto-mode/SKILL.md)'
 ```
 
-`python tag-pstack-skills.py` stamps `metadata.category` onto each fetched skill. The skills themselves are not in the tree; the mapping is. Re-run `./fetch` after `rm -rf corpus/pstack` if you want the untagged copies back.
-
-Since `surf/0001-traverse-context` this tag adds `tag-pstack-skills.py` and this README. `fetch`, `fetch-pstack.sh`, `.gitignore`, and `LICENSE` are the same. The pin is still `889ec4b68fa5aab0e867dad71ec3fdf386ae48f3`.
+Since `surf/0002-surf-yaml-frontmatter` nothing landed except this README. `fetch`, `fetch-pstack.sh`, `tag-pstack-skills.py`, `.gitignore`, and `LICENSE` are the same. The pin is still `889ec4b68fa5aab0e867dad71ec3fdf386ae48f3`.
 
 ## Experimenting
 
-`git switch -c mine surf/0002-surf-yaml-frontmatter` gives you a branch of your own at this post's state.
+`git switch -c mine surf/0003-markdown-edge-cases-in-surf` gives you a branch of your own at this post's state.
